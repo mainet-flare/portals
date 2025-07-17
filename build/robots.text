@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /scripts/
+Disallow: /assets/
+Disallow: /private/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /

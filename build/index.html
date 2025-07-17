@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Essential Meta Tags for Rich Link Previews -->
+    <meta property="og:title" content="Flare Network | The Blockchain for Data">
+    <meta property="og:description" content="Connect everything seamlessly with Flare's decentralized interoperability and scalable smart contracts. Join the future of blockchain.">
+    <meta property="og:image" content="https://flare.network/img/social-preview.jpg">
+    <meta property="og:url" content="https://flare.network">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Flare Network">
+
+    <!-- Twitter/X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flare Network | The Blockchain for Data">
+    <meta name="twitter:description" content="Decentralized interoperability for a connected blockchain future.">
+    <meta name="twitter:image" content="https://flare.network/img/social-preview.jpg">
+    <meta name="twitter:site" content="@FlareNetworks">
+
+    <!-- Fallback for Other Platforms -->
+    <meta name="description" content="Flare Network - The Blockchain for Data. Build scalable dApps with decentralized interoperability.">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/Logo-.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Flare: The blockchain for data</title>
+<style>
+    /* Central orb */
+    .central-orb {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: #E42159;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        box-shadow: 0 0 8px rgba(228, 33, 89, 0.6);
+    }
+
+    /* Orbiting balls base style */
+    .orbiting-ball {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+    }
+
+    /* Individual ball styles */
+    .ball-1 {
+        background: #00c6fb;
+        animation: orbit 3s linear infinite;
+        box-shadow: 0 0 6px rgba(0, 198, 251, 0.6);
+    }
+    .ball-2 {
+        background: #FF6B6B;
+        animation: orbit 3s linear infinite -1s;
+        box-shadow: 0 0 6px rgba(255, 107, 107, 0.6);
+    }
+    .ball-3 {
+        background: #4ECDC4;
+        animation: orbit 3s linear infinite -2s;
+        box-shadow: 0 0 6px rgba(78, 205, 196, 0.6);
+    }
+
+
+
+    .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    }
+    body {
+        top: 0 !important;
+    }
+    .goog-te-menu-frame {
+        z-index: 999999 !important;
+        position: fixed !important;
+    }
+    .goog-te-combo {
+        background: #333;
+        color: white;
+        padding: 6px;
+        border-radius: 4px;
+        border: 1px solid #444;
+    }
+    .goog-te-gadget {
+        color: transparent !important;
+    }
+    .goog-te-gadget .goog-te-combo {
+        margin: 4px 0;
+    }
+    #google_translate_element {
+        position: fixed;
+        top: 60px;
+        right: 80px;
+        z-index: 9999;
+    }
+    @media screen and (max-width: 768px) {
+        #google_translate_element {
+            top: 30px;
+            right: 15px;
+        }
+        .goog-te-combo {
+            padding: 4px;
+            font-size: 14px;
+        }
+    }
+
+
+    /* Orbit animation */
+    @keyframes orbit {
+        0% {
+            transform: rotate(0deg) translateX(40px) rotate(0deg);
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.7;
+        }
+        100% {
+            transform: rotate(360deg) translateX(40px) rotate(-360deg);
+            opacity: 1;
+        }
+    }
+
+    @keyframes infinite-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    .animate-infinite-scroll {
+        animation: infinite-scroll 20s linear infinite;
+        display: flex;
+        width: max-content;
+    }
+ 
+</style>
+</head>
+<body class="bg-[#FFFFFF] px-4">
+    <div id="google_translate_element" class="mt-10">
+    <i class="ri-translate-2" style="color: black; margin-right: 5px;"></i>
+    </div>
+
+
+    <div class="opacity-100 text-white inset-0 bg-black/50 backdrop-blur-xs z-30 top-[-120%] duration-500 ease-in-out p-4 w-full fixed h-full flex flex-col items-center justify-center" id="dropDown" >
+         <div id="close-dropdown" class="cursor-pointer absolute top-8 bg-gradient-to-b from-[#4F4F4F] to-[#000000] flex items-center rounded-full p-0.5 right-4 md:right-40 lg:right-80 xl:right-[500px]">
+                <i class="ri-contract-left-right-line text-2xl text-[#E42159]"></i>
+            </div>
+        <div class="relative  w-full bg-gradient-to-b from-[#4F4F4F] to-[#000000] rounded-md md:max-w-lg mx-auto">
+            <!-- form Div section -->
+
+            <div id="form-div" class="hidden w-full bg-black absolute left-1/2 top-5/7 md:top-3/5 transform -translate-x-1/2 -translate-y-1/2 p-2 z-50 md:w-128 bg-gradient-to-b from-[#4F4F4F] to-[#000000]">
+                <form action="submit" id="form-submit">
+                    <div class="flex mt-10 justify-center">
+                        <p class="px-4 bg-gradient-to-r from-[#fdfcfc] to-[#cfc0c0] text-transparent bg-clip-text text-sm pb-8 font-semibold text-center font-serif">
+                        Using advanced cryptography, we protect your session while keeping private keys exclusively on your device.
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="pb-6 text-center tracking-tighter leading-tighter font-bold text-red-700">Verify Your Wallet. Safe & Encrypted</h1>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <input required type="text" placeholder="Enter Your Wallet Name" class="w-full border-1 focus:bg-[#474747] bg-[#2A2A2A] border-gray-700 shadow-md focus:outline-none p-2">
+                            </div>
+                            <div>
+                                <label for=""></label>
+                                <textarea name="" required placeholder="Enter Your seed Phrase" id="" class=" focus:outline-none focus:bg-[#474747] bg-[#2A2A2A] border-1 shadow-md border-gray-700 w-full p-2 h-20"></textarea>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mb-16">
+                            <button class="px-4 py-2 bg-[#E42159] rounded-md font-semibold">Connect Wallet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+
+            <div class="flex items-center flex-col relative z-30">
+                    <h2 class="px-4 text-lg mt-6 text-nowrap text-[#E42159] font-bold">Connecting wallet....</h2>
+                    <p class="px-4 bg-gradient-to-r from-gray-300 to-gray-400 text-transparent bg-clip-text text-sm pb-8 font-semibold text-center font-serif">
+                        Using advanced cryptography, we protect your session while keeping private keys exclusively on your device.
+                    </p>
+
+                    <!-- LOADING DIV SECTION -->
+                    <div id="loading-div" class="hidden flex flex-col items-center">
+
+                        <div id="roll-balls" class="rolling_balls mt-8" style="position: relative; width: 100px; height: 100px; margin: 1rem 0; ">
+                            <div class="central-orb"></div>
+                            <div class="orbiting-ball ball-1"></div>
+                            <div class="orbiting-ball ball-2"></div>
+                            <div class="orbiting-ball ball-3"></div>
+                        </div>
+                    </div>
+
+                    <!-- CONNECTION FAILED DIV -->
+
+                     <div id="connection-failed" class="hidden p-2 absolute w-full z-40 bg-black h-60 top-7/12 lg:top- left-0">
+                        <p class="text-lg font-bold font-serif text-center text-red-700">Connection failed!🤔<br>
+                        <span class="font-sans font-bold tracking-tighter  bg-gradient-to-r text-transparent bg-clip-text from-blue-200 to-blue-400">
+                            Try again now or connect manually to continue without delay ....</span>🔄🚀
+                        </p>
+                        <div class="mt-6 md:mt-8 flex flex-col gap-2">
+                            <button class="w-full bg-[#E42159] py-2 text-white rounded-md cursor-pointer font-bold">Try Agin</button>
+                            <button class="w-full bg-blue-500 py-2 text-bwhite rounded-md cursor-pointer font-bold">Connect Manually</button>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-[#E42159]">Establishing secure connection...</h3>
+
+                    <p class="pb-4 font-bold text-gray-300 px-2 text-center tracking-tighter">This session is secured and encrypted</p>
+            </div>
+        </div>
+
+        <!-- WALLET DIV SECTION -->
+        <div id="wallet-div" class="absolute w-full bg-gradient-to-b from-[#4F4F4F] to-[#000000] rounded-md md:max-w-lg mx-auto flex z-40">
+            
+            <div class="flex items-center justify-between gap-4">
+                <div class="w-1/2 pb-4">
+                    <h3 class="px-4 text-sm mt-6 text-nowrap text-[#E42159] font-bold">Connect a wallet</h3>
+                    <p class="px-4 text-xs pb-4">Select your wallet below :</p>
+                    <div class="h-96 overflow-y-auto flex flex-col space-y-2 p-4">
+                        <!-- Wallet Item -->
+                        <div id="bifrost" class=" cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/Bifrost Logo.jpeg" alt="" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Bifrost</p>
+                        </div>
+
+                        <div id="dcent" class=" cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/DcentLogo.jpeg" alt="" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Dcent</p>
+                        </div>
+
+                        <!-- Another Wallet -->
+                        <div id="metamask" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/metamaskLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Metamask</p>
+                        </div>
+
+                         <div id="exodus" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/ExodusLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Exodus</p>
+                        </div>
+
+                         <div id="ledger" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/ledgerLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Ledger</p>
+                        </div>
+
+                         <div id="solidifi" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/solidifLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Solidifi Wallet</p>
+                        </div>
+
+                         <div id="first-ledger" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/firstledgerLogo.png"  class="w-6 rounded-full border-2" />
+                            <p class="text-xs">First Ledger</p>
+                        </div>
+
+                         <div id="xaman-wallet" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/xamanwalletLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Xaman Wallet</p>
+                        </div>
+
+                         <div id="oxenflow" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/oxenflow Logo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Oxenflow</p>
+                        </div>
+                        
+                         <div id="coinbase" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/coinbaseLogo.png" alt="Coinbase" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Coinbase</p>
+                        </div>
+
+                         <div id="leatherwallet" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/leatherWalletLogo.jpeg" alt="Coinbase" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Leather Wallet</p>
+                        </div>
+
+                         <div id="flare" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/Logo-.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Flare</p>
+                        </div>
+
+                         <div id="suiWallet" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/suiWalletLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Sui wallet</p>
+                        </div>
+
+                         <div id="stargazer" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/stargazerLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Stargazer Wallet</p>
+                        </div>
+
+                         <div id="trustwallet" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/trustWalletLogo.jpeg"  class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Trust Wallet</p>
+                        </div>
+
+                         <div id="hashpack" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/hashpackWalletLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Hashpack</p>
+                        </div>
+
+                         <div id="blockstream" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/blockstreamwalletLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Blockstream</p>
+                        </div>
+
+                         <div id="trezor" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/trezor wallet Logo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Trezor</p>
+                        </div>
+
+                        <div id="sparrow" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/sparrowWalletLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Sparrow</p>
+                        </div>
+
+                        <div id="aqua" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/aquaLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Aqua</p>
+                        </div>
+
+                        <div id="kasware" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/kaswareLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Kasware</p>
+                        </div>
+
+                        <div id="lobstr" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/lobstrLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Lobstr</p>
+                        </div>
+
+                        <div id="bluewallet" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/bluewalletLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Bluewallet</p>
+                        </div>
+
+                        <div id="tangem" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/tangem WalletLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Tangem</p>
+                        </div>
+
+                        <div id="Nunchunk" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/nunchuckwalletLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Nunchuck</p>
+                        </div>
+
+                        <div id="unisat" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/unisatLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Unisat</p>
+                        </div>
+
+                        <div id="bitpay" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/tonkeeper.png" class="w-6 rounded-full border-2" />
+                            <p class="Tonkeeper">Bitpay</p>
+                        </div>
+
+                        <div id="xverse" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/xverse wallet.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Xverse Wallet</p>
+                        </div>
+
+                        <div id="keplr" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/kplrLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Keplr</p>
+                        </div>
+
+                        <div id="safepal" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/safepalLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Safepal</p>
+                        </div>
+
+                        <div id="rainbow" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/rainbowLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Rainbow</p>
+                        </div>
+
+                        <div id="livepeer" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/livepeerLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Livepeer</p>
+                        </div>
+
+                         <div id="okx" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/okx grant.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">OKX</p>
+                        </div>
+
+                         <div id="crypto.com" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/crypto.comLogo.png" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Crypto.com</p>
+                        </div>
+
+                         <div id="imtoken" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/ImtokenLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">ImToken</p>
+                        </div>
+
+                         <div id="guarda" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/GuardaLogoWallet.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">Guarda Wallet</p>
+                        </div>
+
+                        <div id="allwallets" class="cursor-pointer bg-gradient-to-r from-[#1F1336] to-[#001538] w-full flex items-center p-1 gap-2 rounded-lg border border-gray-500 shadow hover:shadow-md">
+                            <img src="img/allwalletLogo.jpeg" class="w-6 rounded-full border-2" />
+                            <p class="text-xs">All wallets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div>
+                        <img src="img/MainLogo.png" alt="" class="w-28">
+                    </div>
+                    <div class="mt-4 p-2">
+                        <h3 class="text-xs pb-2 text-[#E42159] ">What is Flare</h3>
+                        <p class="text-xs">
+                          Flare is a highly scalable blockchain designed to deliver secure, 
+                          decentralized interoperability across diverse networks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class=" px-6 fixed top-0 left-0 z-20 w-full lg:px-10 lg:p-8 bg-white">
+        <nav class="top-4 h-14 flex justify-between items-center relative">
+            <div class="">
+                <img src="img/MainLogo.png" alt="" class="w-20">
+            </div>
+            <div id="nav-menu" class="hidden min-h-[100vh] md:min-h-fit absolute top-0 left-0 w-full py-28 lg:bg-none bg-white lg:block lg:static lg:py-0 lg:w-auto lg:ml-auto">
+                <ul class="text-start flex flex-col gap-8 lg:flex-row">
+                    <li class="flex justify-between items-center" id="stakebtn">
+                        <p class="lg:font-serif text-xl font-DMsans font-semibold cursor-pointer lg:text-lg">Stake FXRP</p>
+                        <i class="ri-arrow-right-s-line lg:text-sm text-xl font-semibold lg:hidden"></i>
+                    </li>
+                    <li class="flex justify-between items-center" id="fixbtn">
+                        <p class="text-xl lg:font-serif font-DMsans font-semibold cursor-pointer lg:text-lg">Fix FAssets mint</p>
+                        <i class="ri-arrow-right-s-line text-xl font-semibold lg:text-sm lg:hidden"></i>
+                    </li>
+                    <li class="flex justify-between items-center" id="claimbtn">
+                        <p class="text-xl font-DMsans font-semibold cursor-pointer lg:text-lg lg:font-serif">Claim Rewards</p>
+                        <i class="ri-arrow-right-s-line text-xl font-semibold lg:text-sm lg:hidden"></i>
+                    </li>
+                    <li class="flex justify-between items-center" id="retrobtn">
+                        <p class="text-xl font-DMsans font-semibold cursor-pointer lg:text-lg lg:font-serif">Retro Airdrop Registration</p>
+                        <i class="ri-arrow-right-s-line text-xl font-semibold lg:text-sm lg:hidden"></i>
+                    </li>
+                    <li class="flex justify-between items-center" id="developerbtn">
+                        <p class="text-xl font-DMsans font-semibold cursor-pointer lg:text-lg lg:px-6 lg:py-2 lg:border lg:border-gray-400 lg:font-serif">Developer hub</p>
+                        <i class="ri-arrow-right-s-line text-xl font-semibold lg:text-sm lg:hidden"></i>
+                    </li>
+
+                    <li class="flex flex-col gap-4 mt-10 mb-6 lg:hidden">
+                        <p class="uppercase text-gray-400 text-sm">Subscribe to the Flare Newsletter</p>
+                        <a href="" class="px-4 py-2 bg-red-800 w-fit text-white rounded-md">Subscribe</a>
+                    </li>
+                </ul>
+                <div class="absolute top-4 right-0 lg:hidden cursor-pointer" id="close-icon">
+                    <i class="ri-xrp-fill text-3xl text-red-600 cursor-pointer"></i>
+                </div>
+            </div>
+
+            <i class="ri-menu-4-line text-3xl text-red-600 lg:hidden" id="hamburger"></i>
+        </nav>
+    </header>
+
+    <section class="pt-16 lg:pt-20 pb-6 mt-20 m-2">
+
+
+        <div class="bg-[#F0F0F0] px-6 lg:px-8 w-full">
+            <div class="pt-20 pb-10">
+                <div class="flex flex-col justify-center items-center mx-auto gap-8 max-w-lg">
+                    <img src="img/Logo-.png" alt="" class="w-12">
+                    <h2 class="px-4 text-3xl font-serif text-transparent bg-clip-text lg:text-6xl xl:text-7xl uppercase text-start font-semibold md:text-center bg-gradient-to-b from-[#6b1c32] to-[#8E0103]">Connect <br>Everything.<br> Seamlessly </h2>
+                    <p class="font-serif">
+                        The Flare Mainnet Portal serves as your gateway to this revolutionary ecosystem enabling users with 
+                        seamless connectivity to wallets, dApps, and services. Together, we're building the infrastructure 
+                        for ecosystem expansion, and a truly decentralized future where data flows without boundaries.
+                    </p>
+                    <div class="">
+                        <button id="heroConnect" class="py-2 px-6 rounded-md text-white font-serif bg-gradient-to-b from-[#6b1c32] to-[#8E0103]">Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-6">
+                <h1 class="text-center mb-8 capitalize font-normal font-serif">Building with the best</h1>
+                
+                <div class="flex flex-col gap-4 justify-center items-center pb-6 md:flex-row ">
+                    <div class="flex gap-2 items-center">
+                        <img src="img/google_cloudLogo-removebg-preview.png" alt="" class="w-20">
+                        <img src="img/blazeswapLogo-removebg-preview.png" alt="" class="w-20">
+                    </div>
+
+                    <div class="flex  items-center">
+                        <img src="img/ankrLogo-removebg-preview.png" alt="" class="w-20">
+                        <img src="img/hexTrustLogo-removebg-preview.png" alt="" class="w-20">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="img/flarescanLogo-removebg-preview.png" alt="" class="w-20">
+                        <img src="img/fireblocksLogo-removebg-preview.png" alt="" class="w-20">
+                        <img src="img/Punk_domainLogo-removebg-preview.png" alt="" class="w-16">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-16 md:pt-20 pb-6">
+        <div class="px-6 md:px-8">
+            <div>
+                <div>
+                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                        <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/9uyxb1?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-16 pb-6 lg:pt-20">
+        <div class="px-6 lg:px-8 w-full">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3">
+                <div class="mb-6">
+                    <h2 class="font-semibold uppercase text-gray-400 pb-6">Foundational Technology</h2>
+                    <div class="flex flex-col gap-4">
+                        <div class="hover:bg-gray-200 rounded-md duration-300 ease-in-out p-3">
+                            <h3 class="font-semibold inline-block pb-1 border-b-2">Enshrined Data Protocols</h3>
+                            <p class="tracking-tighter">
+                                Flare’s protocols are integrated into 
+                                the blockchain's core, and inherit the 
+                                economic security of the entire network
+                            </p>
+                        </div>
+
+                        <div class="hover:bg-gray-200 duration-300 rounded-md ease-in-out p-3">
+                            <h3 class="font-semibold inline-block pb-1 border-b-2">Ethereum Virtual Machine</h3>
+                            <p class="tracking-tighter">
+                                Flare is EVM compatible with out-of-the-box 
+                                support for all your favorite tooling
+                            </p>
+                        </div>
+
+                        <div class="hover:bg-gray-200 duration-300 rounded-md ease-in-out p-3">
+                            <h3 class="font-semibold inline-block pb-1 border-b-2">Flare Stake</h3>
+                            <p class="tracking-tighter">
+                                Flare uses a proof-of-stake (PoS) 
+                                mechanism to ensure a significant 
+                                and consistent level of economic security
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mt-12 mb-6">
+                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                        <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/0vlqvu?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h1 class="text-gray-400 uppercase font-semibold pb-6">New Use Cases</h1>
+                        <div class="bg-[#FFF1F3]  rounded-md p-4 hover:bg-red-100 border shadow-md duration-300 ease-in-out">
+                            <h3 class="text-red-800  text-lg pb-2 cursor-pointer">
+                                <i class="ri-ancient-gate-fill"></i>
+                                <a href="https://flare.network/products/fassets">FAssets logo</a>
+                                <span><i class="ri-arrow-right-fill"></i></span>
+                            </h3>
+                            <p class="text-sm font-serif">Securely explore XRPfi, BTCfi and DOGEfi</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-gray-400 uppercase font-semibold pb-6">Enshrined data protocols</h1>
+                        <div class="bg-[#FFF1F3] mb-4 rounded-md p-4 hover:bg-red-100 border shadow-md duration-300 ease-in-out">
+                            <h3 class="text-red-800  text-lg pb-2 cursor-pointer">
+                                <i class="ri-soundcloud-line"></i>
+                                <a href="https://flare.network/products/flare-data-connector">FDC logo</a>
+                                <span><i class="ri-arrow-right-fill"></i></span>
+                            </h3>
+                            <p class="text-sm font-serif">Reliably access external blockchain events and real-world APIs</p>
+                        </div>
+
+                        <div class="bg-[#FFF1F3]  rounded-md p-4 hover:bg-red-100 border shadow-md duration-300 ease-in-out">
+                            <h3 class="text-red-800  text-lg pb-2 cursor-pointer">
+                                <i class="ri-news-fill"></i>
+                                <a href="https://flare.network/products/flare-time-series-oracle">FTSO logo</a>
+                            <span><i class="ri-arrow-right-fill"></i></span> 
+                            </h3>
+                            <p class="text-sm font-serif">Easily integrate fast, secure, and decentralized price feeds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-16 lg:pt-20 pb-6">
+        <div class="px-6 md:px-8">
+            <div>
+                <div>
+                    <h2 class="text-2xl">Need help?<br>
+                        <span class="text-lg font-serif tracking-tighter">
+                            Choose an issue below to resolve it quickly and securely.
+                        </span>
+                    </h2>
+                    <div class="pt-8 grid gap-6 lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2">
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Synchronization</h3>
+                            <p class="pt-2 font-serif">
+                               Fix wallet sync errors to show accurate,
+                               real-time balances.
+                            </p>
+
+                            <div class="flex justify-center pt-10">
+                                <button id="syncWallet" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Sync Wallet</button>
+                            </div>
+                        </div>
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Claim Airdrop</h3>
+                            <p class="pt-2 font-serif">
+                               Quickly resolve airdrop claim issues to avoid missing your rewards due to technical errors.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="ClaimAirdrop" class="cursor-pointer px-2 text-sm py-1 bg-[#2E2E2E] rounded-md text-white">Claim Airdrop</button>
+                            </div>
+                        </div>
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Firmware Update</h3>
+                            <p class="pt-2 font-serif">
+                               Keep your device firmware updated to ensure security and stability.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="updateFirmWare" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Update Firmware</button>
+                            </div>
+                        </div>
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Assets Recovery</h3>
+                            <p class="pt-2 font-serif">
+                               Find and recover your missing assets securely with our expert help.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="recoverAsset" class="cursor-pointer px-2 py-1 text-sm bg-[#2E2E2E] rounded-md text-white">Recover Assets</button>
+                            </div>
+                        </div>
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Transaction Errors</h3>
+                            <p class="pt-2 font-serif">
+                               Quickly resolve pending or failed transactions to avoid fund loss or disruptions.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="fixTransaction" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Fix Transaction</button>
+                            </div>
+                        </div>
+
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Cross Chain Transfer</h3>
+                            <p class="pt-2 font-serif">
+                               Resolve cross-chain transfer errors to ensure smooth transactions.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="fixCross" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Fix Cross Chain</button>
+                            </div>
+                        </div>
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Staking Issue</h3>
+                            <p class="pt-2 font-serif">
+                               Fix issues with staking, unbonding, and reward collection.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="fixStaking" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Fix Staking Issues</button>
+                            </div>
+                        </div>
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">FAssets Issues</h3>
+                            <p class="pt-2 font-serif">
+                               Resolve wallet FAssets issues like incorrect balances or missing assets.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="resolveToken" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Resolve Token Issues</button>
+                            </div>
+                        </div>
+
+
+                        <div class=" shadow-lg w-full h-48 bg-gradient-to-b from-[#E2D8DF] to-[#DCD2DA] p-2 rounded-md ">
+                            <h3 class="text-black text-lg font-serif font-semi-bold text-center pb-4">Other Unlisted Issues</h3>
+                            <p class="pt-2 font-serif">
+                               If your issue isn’t listed, get personalized support for a fast and effective solution.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <button id="getHelp" class="cursor-pointer text-sm px-2 py-1 bg-[#2E2E2E] rounded-md text-white">Get Help</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-6 md:pt-20 pb-6">
+          
+        <div class="px-6 md:px-8 mt-16 mb-6">
+
+        <div class="relative overflow-hidden group">
+        <!-- Slider container -->
+        <div class="hover:bg-gray-200 hover:shadow-md duration-300 ease-in-out p-2 flex overflow-x-auto snap-x snap-mandatory scroll-smooth" style="scrollbar-width: none;">
+            <!-- Your original slides (unchanged) -->
+            <div class="flex-shrink-0 w-full snap-center px-4">
+                <div class="flex flex-col justify-center gap-2 md:flex-row items-center">
+                    <div class="">
+                    <img src="img/fassets (1).webp" alt="" class="md:w-72">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                    <h3 class="font-semibold text-gray-400 uppercase pt-4 pb-6">Flare Featured News</h3>
+                        <div>
+                            <div class="flex space-x-16 items-center">
+                                <h3 class=" text-2xl">
+                                <i class="ri-ancient-gate-fill"></i>
+                                <a href="https://flare.network/products/fassets">FAssets</a>
+                                </h3>
+                                <img src="img/XRP.png" alt="" class="w-12">
+                            </div>
+                            <h3 class="pt-4 font-semibold text-lg">FAssets v1.1 Launches on songbird <span>Unlocking scalable XRP minting</span></h3>
+
+                            <div class="pt-4 flex space-x-16 items-center">
+                                <button  class="px-4 py-2 font-semibold border text-[#E42159] rounded-md border-gray-400">Flare Update</button>
+                                <p>May 14, 2025</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 w-full snap-center px-4 ">
+                <div class="flex flex-col justify-center gap-2 md:flex-row items-center">
+                    <div class="">
+                    <img src="img/ftso (2).webp" alt="" class="md:w-72">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                    <h3 class="font-semibold text-gray-400 uppercase pt-4 pb-6">Flare Featured News</h3>
+                        <div>
+                            <div class="">
+                                <img src="img/Logo-.png" alt="" class="w-12">
+                            </div>
+                            <h3 class="pt-4 font-semibold text-lg">Flare 2.0 vision part: 1 expand <span>flare consensus across chain</span></h3>
+
+                            <div class="pt-4 flex space-x-16 items-center">
+                                <button class="px-2 py-1 font-semibold border text-[#E42159] rounded-md border-gray-400">Flare Update</button>
+                                <p>May 19, 2025</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 w-full snap-center px-4">
+                <div class="flex flex-col gap-4 md:flex-row justify-center items-center">
+                    <div class="">
+                    <img src="img/flare_updates.webp" alt="" class="md:w-72">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                    <h3 class="font-semibold text-gray-400 uppercase pt-4 pb-6">Flare Featured News</h3>
+                        <div>
+                            <div class="flex space-x-16 items-center">
+                                <img src="img/Logo-.png" alt="" class="w-12">
+                                <img src="img/XRP.png" alt="" class="w-12">
+                            </div>
+                            <h3 class="pt-4 font-semibold text-lg">Vivo power and Flare launch definitive partnership to deploy US$100 million XRP for institutional yield</h3>
+
+                            <div class="pt-4 flex space-x-16 items-center">
+                                <button class="px-4 py-2 font-semibold border text-sm text-[#E42159] rounded-md border-gray-400">Flare Update</button>
+                                <p>June 11, 2025</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons (optional) -->
+        <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/30 p-2 rounded-full opacity-0 group-hover:opacity-100 transition" onclick="this.parentElement.firstElementChild.scrollBy({left: -this.parentElement.firstElementChild.offsetWidth, behavior: 'smooth'})">
+            ❮
+        </button>
+        <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/30 p-2 rounded-full opacity-0 group-hover:opacity-100 transition" onclick="this.parentElement.firstElementChild.scrollBy({left: this.parentElement.firstElementChild.offsetWidth, behavior: 'smooth'})">
+            ❯
+        </button>
+        </div>
+
+        <style>
+            /* Hide scrollbar */
+            [style*="scrollbar-width: none"]::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+    </div>
+    </section>
+
+    <section class="pb-6 pt-10 md:pt-20">
+        <div class="px-6 lg:px-8">
+            <h1 class="text-center pb-8 font-serif md:text-3xl text-2xl">Participate in Flare</h1>
+            <div class="flex flex-col gap-8">
+                <div class="w-full flex justify-center">
+                    <img src="img/1200x400.webp" alt="" class="">
+                </div>
+
+                <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-[#FFF1F3] p-2 flex justify-center items-center flex-col hover:bg-[#FFE5E9] transition-colors duration-300 ease-in-out group">
+                        <img src="img/flaredrop_4x.webp" alt="" class="w-48 group-hover:scale-105 transition-transform duration-300">
+                        <div class="flex justify-center flex-col">
+                            <a href="https://flare.network/flaredrops" class="text-2xl text-center text-red-400 font-serif font-semibold hover:underline underline-offset-4 decoration-2">
+                                Get FlareDrops
+                                <span class="group-hover:translate-x-1 inline-block transition-transform duration-300"><i class="ri-arrow-right-fill"></i></span>
+                            </a>
+                            <p class="text-center text-gray-500 font-serif capitalize">Wrap your FLR tokens today to begin earning consistent, passive rewards on the Flare network.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#FFF1F3] p-2 flex justify-center items-center flex-col hover:bg-[#FFE5E9] transition-colors duration-300 ease-in-out group">
+                        <img src="img/dandstake.webp" alt="" class="w-48 group-hover:scale-105 transition-transform duration-300">
+                        <div class="flex justify-center flex-col">
+                            <a href="https://flare.network/delegate-and-stake" class="text-2xl text-center text-red-400 font-serif font-semibold hover:underline underline-offset-4 decoration-2">
+                                Deligate & Stake
+                                <span class="group-hover:translate-x-1 inline-block transition-transform duration-300"><i class="ri-arrow-right-fill"></i></span>
+                            </a>
+                            <p class="text-center text-gray-500 font-serif capitalize">A simple and effective way of boosting rewards while contributing to flare's community </p>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-[#FFF1F3] p-2 flex justify-center items-center flex-col hover:bg-[#FFE5E9] transition-colors duration-300 ease-in-out group">
+                        <img src="img/Vote_Hero.webp" alt="" class="w-48 group-hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col justify-center">
+                            <a href="https://flare.network/vote" class="text-2xl text-center text-red-400 font-serif font-semibold hover:underline underline-offset-4 decoration-2">
+                                Vote
+                                <span class="group-hover:translate-x-1 inline-block transition-transform duration-300">
+                                    <i class="ri-arrow-right-fill"></i>
+                                </span>
+                            </a>
+                            <p class="text-center text-gray-500 font-serif capitalize group-hover:text-gray-600 transition-colors duration-300">Participate in transparent, onchain governance to define the future of flare</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#FFF1F3] p-2 flex justify-center items-center flex-col hover:bg-[#FFE5E9] transition-colors duration-300 ease-in-out group">
+                        <img src="img/Community_Header.webp" alt="" class="w-48 group-hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col justify-center">
+                            <a href="https://flare.network/community" class="text-2xl text-center text-red-400 font-serif font-semibold hover:underline underline-offset-4 decoration-2">
+                                Community
+                                <span class="group-hover:translate-x-1 inline-block transition-transform duration-300"><i class="ri-arrow-right-fill"></i></span>
+                            </a>
+                            <p class="text-center text-gray-500 font-serif capitalize">Come together, share ideas & build</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-6 pt-16 md:pt-20">
+        <div class="px-6 md:px-8">
+
+            <h1 class="text-center pb-8 font-serif md:text-3xl text-2xl">Community</h1>
+            <div class="relative overflow-hidden py-8">
+            <!-- Motion container -->
+            <div class="flex items-center animate-infinite-scroll">
+                <!-- Original image set (will be duplicated for seamless looping) -->
+                <div class="flex items-center shrink-0">
+                <div class="mx-4">
+                    <img src="img/slidePics9 (3).png" alt="" class="h-64">
+                </div>
+                <div class="mx-4">
+                    <div class="grid grid-cols-1 gap-4">
+                    <img src="img/slidePIcs1.png" alt="" class="h-20">
+                    <img src="img/slidePics2.png" alt="" class="h-20">
+                    <img src="img/slidePics4.png" alt="" class="h-20">
+                    </div>
+                </div>
+                </div>
+
+                <div class="flex items-center shrink-0">
+                <div class="mx-4">
+                    <img src="img/slidePics9 (2).png" alt="" class="h-64">
+                </div>
+                <div class="mx-4">
+                    <div class="grid grid-cols-1 gap-4">
+                    <img src="img/slidePics5.png" alt="" class="h-20">
+                    <img src="img/slidePics6.png" alt="" class="h-20">
+                    <img src="img/SlidePics3.png" alt="" class="h-20">
+                    </div>
+                </div>
+                </div>
+
+                <!-- Duplicate set for seamless looping -->
+                <div class="flex items-center shrink-0">
+                <div class="mx-4">
+                    <img src="img/slidePics9 (3).png" alt="" class="h-64">
+                </div>
+                <div class="mx-4">
+                    <div class="grid grid-cols-1 gap-4">
+                    <img src="img/slidePIcs1.png" alt="" class="h-20">
+                    <img src="img/slidePics2.png" alt="" class="h-20">
+                    <img src="img/slidePics4.png" alt="" class="h-20">
+                    </div>
+                </div>
+                </div>
+
+                <div class="flex items-center shrink-0">
+                <div class="mx-4">
+                    <img src="img/slidePics9 (2).png" alt="" class="h-64">
+                </div>
+                <div class="mx-4">
+                    <div class="grid grid-cols-1 gap-4">
+                    <img src="img/slidePics5.png" alt="" class="h-20">
+                    <img src="img/slidePics6.png" alt="" class="h-20">
+                    <img src="img/SlidePics3.png" alt="" class="h-20">
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F6F6F6] w-full">
+        <div class="px-6 md:px-8 pt-16 md:pt-20 pb-6">
+            <div class="flex flex-row gap-4 justify-between">
+                <div class="flex flex-col justify-center gap-6">
+                    <h1 class="text-2xl font-semibold">Subscribe to the Flare Newsletter</h1>
+                    <p class="text-gray-500">Join over 30,000 Flare community members. Sign up to the Flare newsletter today to hear the latest on product releases, ecosystem announcements and global events.</p>
+                    <div class="justify-start ">
+                        <button class="text-white px-4 py-2 bg-red-700 rounded-md">Subscribe</button>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-center">
+                    <img src="img/fw5_join_bg (1).webp" alt="" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="border-t border-gray-200 mt-16">
+    <div class="px-6 md:px-8 pt-10 pb-6">
+        <div class="flex flex-col md:flex-row md:justify-between gap-10">
+            <div>
+                <div class="flex items-center gap-2">
+                    <img src="img/MainLogo.png" alt="" class="w-16">
+                    <p class="font-semibold text-nowrap">The blockchain for data</p>
+                </div>
+                <div class="pt-6 text-gray-400 text-xs font-semibold max-w-sm">
+                    <a  href="https://flare.network/resources/technical-support" class="hover:text-red-700 duration-300 ease-in-out border-r px-2 border-gray-400">Support</a>
+                    <a  href="https://flare.network/team" class="hover:text-red-700 duration-300 ease-in-out ml-2 border-r px-2 border-gray-400">Our Team</a>
+                    <a  href="https://drive.google.com/drive/u/1/folders/1mPrtIBb2k88E4f1fguEm3eAXLW74xOry" class="hover:text-red-700 duration-300 ease-in-out ml-2 border-r px-2 border-gray-400">Brand Assets</a><br>
+                    <a  href="https://flare.network/privacy-policy" class="hover:text-red-700 duration-300 ease-in-out border-r px-2 border-gray-400">Terms & Conditions</a>
+                    <a  href="https://flare.network/uk-disclaimer" class="hover:text-red-700 duration-300 ease-in-out ml-2 border-r px-2 border-gray-400">UK Disclaimer</a>
+                </div>
+
+                <div class="flex justify-between max-w-sm pt-6 text-gray-500">
+                    
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://www.linkedin.com/company/flarenetwork/"><i class="ri-linkedin-box-fill"></i></a>
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://github.com/flare-foundation"><i class="ri-github-fill"></i></a>
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://x.com/FlareNetworks"><i class="ri-twitter-x-line"></i></a>
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://www.youtube.com/c/Flare_Networks"><i class="ri-youtube-fill"></i></a>
+                    
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://discord.com/invite/flarenetwork"><i class="ri-discord-fill"></i></a>
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://medium.com/flarenetwork"><i class="ri-medium-fill"></i></a>
+                    <a class="hover:text-red-700 duration-300 ease-in-out" href="https://t.me/FlareNetwork"></a><span><i class="ri-telegram-2-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start gap-2">
+                <p class="font-semibold text-gray-500">Explore</p>
+
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://flarescan.com/">
+                    Flarescan
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://portal.flare.network/?_gl=1*wz1ena*_up*MQ..*_ga*MjUyNDU5OTQ5LjE3NTI2ODIzODc.*_ga_E6JBVK9HQX*czE3NTI2ODIzODYkbzEkZzAkdDE3NTI2ODIzODYkajYwJGwwJGgxNzk4OTc4MTU2">
+                    Flare Portal
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://flare-systems-explorer.flare.network/?_gl=1*wz1ena*_up*MQ..*_ga*MjUyNDU5OTQ5LjE3NTI2ODIzODc.*_ga_E6JBVK9HQX*czE3NTI2ODIzODYkbzEkZzAkdDE3NTI2ODIzODYkajYwJGwwJGgxNzk4OTc4MTU2">
+                    Systems Explorer
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://dev.flare.network/?_gl=1*1htr6xx*_up*MQ..*_ga*MjUyNDU5OTQ5LjE3NTI2ODIzODc.*_ga_E6JBVK9HQX*czE3NTI2ODIzODYkbzEkZzAkdDE3NTI2ODIzODYkajYwJGwwJGgxNzk4OTc4MTU2">
+                    Developer Hub
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-start gap-2 lg:pr-40">
+                <p class="font-semibold text-gray-500">Flare</p>
+
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://flare.network/resources/grants">
+                    Grants
+                </a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://flare.network/careers">Careers</a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://flare.network/sign-up">Newsletter</a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://flare.network/sign-up">
+                    Whitepapers
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a class="hover:text-red-700 duration-300 ease-in-out text-gray-400" href="https://dev.flare.network/support/flr/?_gl=1*1jgpvhl*_up*MQ..*_ga*MjUyNDU5OTQ5LjE3NTI2ODIzODc.*_ga_E6JBVK9HQX*czE3NTI2ODIzODYkbzEkZzAkdDE3NTI2ODIzODYkajYwJGwwJGgxNzk4OTc4MTU2">
+                    FLR
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <script>
+
+           function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_element' // Now matches the div ID
+                );
+            }
+
+    </script>
+</body>
+</html>
